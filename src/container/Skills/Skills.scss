@@ -133,6 +133,15 @@
   }
 }
 
+.app__skills-exp-work ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.app__skills-exp-work li {
+  margin-bottom: 5px;
+}
+
 .skills-tooltip {
   max-width: 300px !important;
   background-color: var(--white-color) !important;

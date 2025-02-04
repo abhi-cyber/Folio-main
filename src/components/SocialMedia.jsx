@@ -15,9 +15,6 @@ const SocialMedia = () => (
     <div onClick={(e) => handleLinkClick(e, process.env.REACT_APP_TWITTER_URL)}>
       <FaTwitter />
     </div>
-    <div onClick={(e) => handleLinkClick(e, process.env.REACT_APP_FACEBOOK_URL)}>
-      <FaFacebookF />
-    </div>
     <div onClick={(e) => handleLinkClick(e, process.env.REACT_APP_INSTAGRAM_URL)}>
       <BsInstagram />
     </div>

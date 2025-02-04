@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Tooltip as ReactTooltip } from "react-tooltip";
+import React, {useState, useEffect} from "react";
+import {motion} from "framer-motion";
+import {Tooltip as ReactTooltip} from "react-tooltip";
 
-import { AppWrap, MotionWrap } from "../../wrapper";
-import { urlFor, client } from "../../client";
+import {AppWrap, MotionWrap} from "../../wrapper";
+import {urlFor, client} from "../../client";
 import "./Skills.scss";
 
 const Skills = () => {
@@ -15,7 +15,6 @@ const Skills = () => {
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
-      console.log(data);
       setExperience(data);
     });
 
@@ -34,15 +33,13 @@ const Skills = () => {
         <motion.div className="app__skills-list">
           {skills?.map((skill) => (
             <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
+              whileInView={{opacity: [0, 1]}}
+              transition={{duration: 0.5}}
               className="app__skills-item app__flex"
-              key={skill.name}
-            >
+              key={skill.name}>
               <div
                 className="app__flex"
-                style={{ backgroundColor: skill.bgColor }}
-              >
+                style={{backgroundColor: skill.bgColor}}>
                 <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
 
@@ -62,25 +59,28 @@ const Skills = () => {
                 {exp.works.map((work) => (
                   <React.Fragment key={work.name}>
                     <motion.div
-                      whileInView={{ opacity: [0, 1] }}
-                      transition={{ duration: 0.5 }}
+                      whileInView={{opacity: [0, 1]}}
+                      transition={{duration: 0.5}}
                       className="app__skills-exp-work"
                       data-tip
                       data-for={work.name}
-                      key={work.name}
-                    >
+                      key={work.name}>
                       <p className="bold-text">{work.company}</p>
                       <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text">{work.desc}</p>{" "}
-                      {/* Description placed under company */}
+                      <ul>
+                        {work.desc.map((point, index) => (
+                          <li key={index} className="p-text">
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
                     </motion.div>
                     <ReactTooltip
                       id={work.name}
                       effect="solid"
                       arrowColor="#fff"
-                      className="skills-tooltip"
-                    >
-                      {work.desc}
+                      className="skills-tooltip">
+                      {work.desc.join(", ")}
                     </ReactTooltip>
                   </React.Fragment>
                 ))}
