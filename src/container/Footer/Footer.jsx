@@ -7,7 +7,7 @@ import "./Footer.scss";
 
 export const Footer = () => {
   const onButtonClick = () => {
-    const pdfUrl = "https://abhiraj-resume.tiiny.site/";
+    const pdfUrl = "https://abhiraj-singh-resume.tiiny.site";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Abhiraj Resume.pdf";
