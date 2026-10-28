@@ -1,13 +1,13 @@
-// Single source of truth for site content. Mirrors public/resume/Abhiraj_Singh_Chatrath_Resume.pdf.
+// Single source of truth for site content. Mirrors public/resume/Abhiraj_Singh_Resume.pdf.
 
 export const profile = {
-  name: 'Abhiraj Singh Chatrath',
+  name: 'Abhiraj Singh',
   shortName: 'Abhiraj',
   role: 'Lead AI Engineer',
   company: 'iBase-t',
   location: 'Ahmedabad, India',
   email: 'abhicyber.dev@gmail.com',
-  resumePdf: '/resume/Abhiraj_Singh_Chatrath_Resume.pdf',
+  resumePdf: '/resume/Abhiraj_Singh_Resume.pdf',
   headline: ['Agentic AI', 'LLM Fine-Tuning', 'RAG', 'AI Automation', 'AI Enablement'],
   summary:
     'Lead AI Engineer building agentic systems and AI automation for aerospace and defense manufacturing, from fine-tuned LLMs running in air-gapped environments to end-to-end SDLC and business-workflow automation. I build AI agents, automation tools and Claude skills for technical and non-technical teams alike, and teach every employee, technical or not, to use AI effectively.',

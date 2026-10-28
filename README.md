@@ -1,6 +1,6 @@
 # abhirajchatrath.netlify.app
 
-Personal site of Abhiraj Singh Chatrath, Lead AI Engineer.
+Personal site of Abhiraj Singh, Lead AI Engineer.
 
 ## Stack
 
