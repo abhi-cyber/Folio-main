@@ -76,8 +76,8 @@ export default function Hero({ ready }) {
           <span className="pulse" aria-hidden="true" /> Now: {profile.role} at {profile.company}
         </p>
         <h1 className="hero__title" aria-label={profile.name}>
-          <span className="line" aria-hidden="true">Abhiraj Singh</span>
-          <span className="line line--outline" aria-hidden="true">Chatrath</span>
+          <span className="line" aria-hidden="true">Abhiraj</span>
+          <span className="line line--outline" aria-hidden="true">Singh</span>
         </h1>
         <p className="hero__sub">
           I build{' '}

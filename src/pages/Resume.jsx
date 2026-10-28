@@ -32,7 +32,7 @@ export default function Resume() {
         <div className="cv-actions">
           <button className="btn btn--ghost btn--small" onClick={() => copyText(window.location.href, 'Resume link copied')}>Copy link</button>
           <button className="btn btn--ghost btn--small" onClick={() => window.print()}>Print</button>
-          <a className="btn btn--accent btn--small" href={profile.resumePdf} download="Abhiraj_Singh_Chatrath_Resume.pdf">
+          <a className="btn btn--accent btn--small" href={profile.resumePdf} download="Abhiraj_Singh_Resume.pdf">
             Download PDF
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 4v12M6 10l6 6 6-6M5 20h14" /></svg>
           </a>

@@ -6,6 +6,12 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# Old resume link from before the name change
+[[redirects]]
+  from = "/resume/Abhiraj_Singh_Chatrath_Resume.pdf"
+  to = "/resume/Abhiraj_Singh_Resume.pdf"
+  status = 301
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -20,4 +26,4 @@
   for = "/resume/*.pdf"
   [headers.values]
     Content-Type = "application/pdf"
-    Content-Disposition = "inline; filename=\"Abhiraj_Singh_Chatrath_Resume.pdf\""
+    Content-Disposition = "inline; filename=\"Abhiraj_Singh_Resume.pdf\""
