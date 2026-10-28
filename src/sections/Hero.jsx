@@ -39,7 +39,7 @@ export default function Hero({ ready }) {
       if (!ready) return;
       const mm = gsap.matchMedia();
       mm.add('(prefers-reduced-motion: no-preference)', () => {
-        const split = new SplitText('.hero__title .line', { type: 'chars', charsClass: 'char' });
+        const split = new SplitText('.hero__title .line', { type: 'words,chars', wordsClass: 'word', charsClass: 'char' });
         const tl = gsap.timeline({ defaults: { ease: 'expo.out' } });
         tl.from(split.chars, { yPercent: 110, rotate: 8, opacity: 0, duration: 1.2, stagger: 0.025 })
           .from('.hero__eyebrow', { y: 20, opacity: 0, duration: 0.8 }, 0.2)
