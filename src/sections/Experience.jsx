@@ -15,9 +15,11 @@ export default function Experience() {
           scrollTrigger: { trigger: '.timeline', start: 'top 60%', end: 'bottom 60%', scrub: true },
         });
         gsap.utils.toArray('.job').forEach((job) => {
-          gsap.from(job.querySelectorAll('.job__head, .role'), {
-            y: 50, opacity: 0, duration: 1, stagger: 0.12, ease: 'expo.out',
-            scrollTrigger: { trigger: job, start: 'top 80%' },
+          gsap.utils.toArray(job.querySelectorAll('.job__head, .role')).forEach((el) => {
+            gsap.from(el, {
+              y: 30, opacity: 0, duration: 0.9, ease: 'expo.out',
+              scrollTrigger: { trigger: el, start: 'top 88%' },
+            });
           });
           gsap.fromTo(job.querySelector('.job__node'), { scale: 0 }, {
             scale: 1, duration: 0.6, ease: 'back.out(3)',
