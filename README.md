@@ -1,4 +1,4 @@
-# abhirajchatrath.netlify.app
+# abhirajsingh-ai.netlify.app
 
 Personal site of Abhiraj Singh, Lead AI Engineer.
 
